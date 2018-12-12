@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<GridPane
+        xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="com.sogilis.idfx.Main"
+        prefHeight="400.0"
+        prefWidth="600.0"
+>
+
+    <Text
+        id="welcome-text"
+        text="Bienvenue !"
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="0"
+        GridPane.columnSpan="2"
+    />
+
+    <Label
+        text="Agent"
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="1"
+    />
+
+    <TextField
+        id="agent-id"
+        GridPane.columnIndex="1"
+        GridPane.rowIndex="1"
+    />
+
+    <Label
+        text="Mot de passe"
+        GridPane.columnIndex="0"
+        GridPane.rowIndex="2"
+    />
+
+    <PasswordField
+        id="agent-password"
+        GridPane.columnIndex="1"
+        GridPane.rowIndex="2"
+    />
+
+    <HBox
+        spacing="10"
+        alignment="BOTTOM_RIGHT"
+        GridPane.columnIndex="1"
+        GridPane.rowIndex="4"
+    >
+
+        <Button
+            id="connection-button"
+            text="Se connecter"
+            onAction="#onConnectionButton"
+        />
+
+    </HBox>
+
+
+
+</GridPane>
