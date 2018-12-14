@@ -14,7 +14,7 @@
 
     <Text
         id="welcome-text"
-        text="Bienvenue !"
+        text="%welcome-text"
         GridPane.columnIndex="0"
         GridPane.rowIndex="0"
         GridPane.columnSpan="2"

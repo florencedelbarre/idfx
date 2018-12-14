@@ -5,9 +5,9 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-    public static Stage primaryStage;
-    public static Scene loginScene;
-    public static Scene tollScene;
+    static Stage primaryStage;
+    static Scene loginScene;
+    static Scene tollScene;
 
     @Override
     public void start(Stage primaryStage) throws Exception {
