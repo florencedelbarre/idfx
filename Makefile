@@ -13,3 +13,6 @@ $(TARGET): $(SRC)
 
 run:
 	@java -jar $(TARGET)
+
+clean:
+	rm -r build
