@@ -14,14 +14,14 @@
 
     <Text
         id="welcome-text"
-        text="%welcome-text"
+        text="%login-welcome-text"
         GridPane.columnIndex="0"
         GridPane.rowIndex="0"
         GridPane.columnSpan="2"
     />
 
     <Label
-        text="Agent"
+        text="%login-label-agent"
         GridPane.columnIndex="0"
         GridPane.rowIndex="1"
     />
@@ -33,7 +33,7 @@
     />
 
     <Label
-        text="Mot de passe"
+        text="%login-label-password"
         GridPane.columnIndex="0"
         GridPane.rowIndex="2"
     />
@@ -53,7 +53,7 @@
 
         <Button
             id="connection-button"
-            text="Se connecter"
+            text="%login-button-connection"
             onAction="#onConnectionButton"
         />
 

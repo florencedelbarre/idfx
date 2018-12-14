@@ -13,7 +13,7 @@ import java.util.ResourceBundle;
 public class LoginCallbacks {
 
     public static Scene buildScene(Class clazz) throws IOException {
-        Parent root = FXMLLoader.load(clazz.getResource("/ui/LoginScene.fxml"), ResourceBundle.getBundle("i18n", Locale.FRANCE));
+        Parent root = FXMLLoader.load(clazz.getResource("/ui/LoginScene.fxml"), ResourceBundle.getBundle("i18n", Locale.ENGLISH));
         return new Scene(root);
     }
 
