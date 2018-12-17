@@ -4,59 +4,88 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Text?>
 
-<GridPane
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane
         xmlns="http://javafx.com/javafx"
         xmlns:fx="http://javafx.com/fxml"
-        fx:controller="com.sogilis.idfx.LoginCallbacks"
+        fx:controller="com.sogilis.idfx.callback.LoginCallbacks"
         prefHeight="400.0"
         prefWidth="600.0"
 >
 
-    <Text
-        id="welcome-text"
-        text="%login-welcome-text"
-        GridPane.columnIndex="0"
-        GridPane.rowIndex="0"
-        GridPane.columnSpan="2"
-    />
+    <top>
+        <HBox
+                xmlns="http://javafx.com/javafx"
+                xmlns:fx="http://javafx.com/fxml"
+                alignment="BASELINE_RIGHT"
+        >
 
-    <Label
-        text="%login-label-agent"
-        GridPane.columnIndex="0"
-        GridPane.rowIndex="1"
-    />
+            <ImageView onMouseClicked="#setFrench">
+                <image>
+                    <Image url="/flag/fr.png" />
+                </image>
+            </ImageView>
 
-    <TextField
-        id="agent-id"
-        GridPane.columnIndex="1"
-        GridPane.rowIndex="1"
-    />
+            <ImageView onMouseClicked="#setEnglish">
+                <image>
+                    <Image url="/flag/en.png" />
+                </image>
+            </ImageView>
 
-    <Label
-        text="%login-label-password"
-        GridPane.columnIndex="0"
-        GridPane.rowIndex="2"
-    />
+        </HBox>
+    </top>
 
-    <PasswordField
-        id="agent-password"
-        GridPane.columnIndex="1"
-        GridPane.rowIndex="2"
-    />
+    <center>
+        <GridPane>
+            <Text
+                    id="welcome-text"
+                    text="%login-welcome-text"
+                    GridPane.columnIndex="0"
+                    GridPane.rowIndex="0"
+                    GridPane.columnSpan="2"
+            />
 
-    <HBox
-        spacing="10"
-        alignment="BOTTOM_RIGHT"
-        GridPane.columnIndex="1"
-        GridPane.rowIndex="4"
-    >
+            <Label
+                    text="%login-label-agent"
+                    GridPane.columnIndex="0"
+                    GridPane.rowIndex="1"
+            />
 
-        <Button
-            id="connection-button"
-            text="%login-button-connection"
-            onAction="#onConnectionButton"
-        />
+            <TextField
+                    fx:id="agentId"
+                    GridPane.columnIndex="1"
+                    GridPane.rowIndex="1"
+            />
 
-    </HBox>
+            <Label
+                    text="%login-label-password"
+                    GridPane.columnIndex="0"
+                    GridPane.rowIndex="2"
+            />
 
-</GridPane>
+            <PasswordField
+                    fx:id="agentPassword"
+                    GridPane.columnIndex="1"
+                    GridPane.rowIndex="2"
+            />
+
+            <HBox
+                    spacing="10"
+                    alignment="BOTTOM_RIGHT"
+                    GridPane.columnIndex="1"
+                    GridPane.rowIndex="4"
+            >
+
+                <Button
+                        id="connection-button"
+                        text="%login-button-connection"
+                        onAction="#onConnectionButton"
+                />
+
+            </HBox>
+        </GridPane>
+    </center>
+
+</BorderPane>
+
