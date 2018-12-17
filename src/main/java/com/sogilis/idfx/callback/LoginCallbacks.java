@@ -14,8 +14,10 @@ public class LoginCallbacks {
     @FXML private TextField agentId;
     @FXML private PasswordField agentPassword;
 
-    @FXML protected void onConnectionButton(ActionEvent event) {
+    @FXML protected void onConnectionPressed(ActionEvent event) {
         Main.primaryStage.setScene(Main.tollScene);
+        agentId.clear();
+        agentPassword.clear();
     }
 
     @FXML public void setFrench() throws IOException {

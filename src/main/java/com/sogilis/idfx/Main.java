@@ -11,7 +11,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class Main extends Application {
-    public static Locale locale = Locale.ENGLISH;
+    private static Locale locale = Locale.ENGLISH;
 
     public static Stage primaryStage;
     public static Scene loginScene;
@@ -39,7 +39,6 @@ public class Main extends Application {
     }
 
     public static void rebuildAllScenes(Locale locale) throws IOException {
-        System.out.println("rebuildAllScenes !!!");
         Main.locale = locale;
         Main.loginScene = buildScene("/ui/LoginScene.fxml");
         Main.tollScene = buildScene("/ui/TollScene.fxml");
