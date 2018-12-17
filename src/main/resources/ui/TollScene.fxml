@@ -9,53 +9,38 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Button?>
 <BorderPane
-        xmlns="http://javafx.com/javafx"
-        xmlns:fx="http://javafx.com/fxml"
-        fx:id="root"
-        fx:controller="com.sogilis.idfx.callback.TollCallbacks"
-        prefHeight="400.0"
-        prefWidth="600.0"
+    xmlns="http://javafx.com/javafx"
+    xmlns:fx="http://javafx.com/fxml"
+    fx:controller="com.sogilis.idfx.callback.TollCallbacks"
+    prefHeight="400.0"
+    prefWidth="600.0"
 >
-
     <top>
-        <HBox
-                xmlns="http://javafx.com/javafx"
-                xmlns:fx="http://javafx.com/fxml"
-                alignment="BASELINE_RIGHT"
-        >
-
+        <HBox alignment="BASELINE_RIGHT" >
             <ImageView onMouseClicked="#setFrench">
-                <image>
-                    <Image url="/flag/fr.png" />
-                </image>
+                <Image url="/flag/fr.png"/>
             </ImageView>
 
             <ImageView onMouseClicked="#setEnglish">
-                <image>
-                    <Image url="/flag/en.png" />
-                </image>
+                <Image url="/flag/en.png"/>
             </ImageView>
-
         </HBox>
     </top>
 
     <center>
         <GridPane>
-
             <VBox>
                 <Text
-                        text="%toll-text"
-                        GridPane.columnIndex="0"
-                        GridPane.rowIndex="0"
-                        GridPane.columnSpan="2"
+                    text="%toll-text"
+                    GridPane.columnIndex="0"
+                    GridPane.rowIndex="0"
+                    GridPane.columnSpan="2"
                 />
                 <Button
-                    fx:id="tollButton"
                     text="%toll-button-back"
                     onAction="#onBackPressed"
                 />
             </VBox>
-
         </GridPane>
     </center>
 </BorderPane>
