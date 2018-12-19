@@ -28,6 +28,8 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Main.primaryStage = primaryStage;
+        Main.primaryStage.setMinWidth(400);
+        Main.primaryStage.setMinHeight(320);
 
         // Default locale English
         rebuildAllScenes(Locale.ENGLISH);
