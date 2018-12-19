@@ -1,43 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Text?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.Button?>
 <BorderPane
     xmlns="http://javafx.com/javafx"
     xmlns:fx="http://javafx.com/fxml"
-    fx:controller="com.sogilis.idfx.callback.TollCallbacks"
-    prefHeight="400.0"
-    prefWidth="600.0"
->
-    <top>
-        <HBox alignment="BASELINE_RIGHT" >
-            <ImageView onMouseClicked="#setFrench">
-                <Image url="/flag/fr.png"/>
-            </ImageView>
-            <ImageView onMouseClicked="#setEnglish">
-                <Image url="/flag/en.png"/>
-            </ImageView>
-        </HBox>
-    </top>
+    fx:controller="com.sogilis.idfx.controller.FXMLHomeController">
 
     <center>
         <GridPane>
             <VBox>
                 <Text
-                    text="%toll-text"
+                    text="COUCOU"
                     GridPane.columnIndex="0"
                     GridPane.rowIndex="0"
                     GridPane.columnSpan="2"
-                />
-                <Button
-                    text="%toll-button-back"
-                    onAction="#onBackPressed"
                 />
             </VBox>
         </GridPane>
